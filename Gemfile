@@ -15,19 +15,26 @@ gem 'jbuilder', '~> 1.2'
 
 # helps to use Rails without a database
 gem 'activerecord-tableless'
+
 # support for Zurb Foundation
 gem 'compass-rails', '~> 1.1.2'
+
 # configuration framework
 gem 'figaro'
+
 # access to the MailChimp API
 # IMPORTANT: Gibbon now targets MailChimp API 2.0, which is substantially different from API 1.3.
 gem 'gibbon'
+
 # use Google Drive spreadsheets for data storage
 gem 'google_drive'
+
 # for static pages like “about”
 gem 'high_voltage'
+
 # forms made easy
 gem 'simple_form'
+
 # front-end framework
 gem 'zurb-foundation', '~> 4.3.2'
 
