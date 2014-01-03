@@ -14,7 +14,7 @@ gem 'jbuilder', '~> 1.2'
 # Pour l'application learn-rails
 
 # helps to use Rails without a database
-gem 'activerecord-tableless'
+gem 'activerecord-tableless', '~> 1.0'
 
 # support for Zurb Foundation
 gem 'compass-rails', '~> 1.1.2'

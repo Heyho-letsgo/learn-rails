@@ -157,7 +157,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-tableless
+  activerecord-tableless (~> 1.0)
   better_errors
   coffee-rails (~> 4.0.0)
   compass-rails (~> 1.1.2)
