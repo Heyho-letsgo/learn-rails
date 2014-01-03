@@ -19,12 +19,61 @@
 @mixin six-columns-centered {
   @extend .small-6;
   @extend .columns;
-  @extend .text-center;
+  @extend .text-centered;
+  }
+@mixin two-columns-centered {
+  @extend .small-2;
+  @extend .columns;
+  @extend .text-centered;
+  }
+@mixin three-columns-centered {
+  @extend .small-3;
+  @extend .columns;
+  @extend .text-centered;
+  }
+@mixin four-columns-centered {
+  @extend .small-4;
+  @extend .columns;
+  @extend .text-centered;
+  }
+@mixin height-columns-centered {
+  @extend .small-8;
+  @extend .columns;
+  @extend .text-centered;
+  }
+@mixin nine-columns-centered {
+  @extend .small-9;
+  @extend .columns;
+  @extend .text-centered;
+  }
+
+@mixin ten-columns-centered {
+  @extend .small-10;
+  @extend .columns;
+  @extend .text-centered;
   }
 // create your own classes
 // to make views framework-neutral
 .column {
   @include six-columns-centered;
+  }
+.column2 {
+  @include two-columns-centered;
+  }
+.column3 {
+  @include three-columns-centered;
+  }
+.column4 {
+  @include four-columns-centered;
+  }
+.column8 {
+  @include height-columns-centered;
+  }
+.column9 {
+  @include nine-columns-centered;
+  }
+.column10 {
+  @include ten-columns-centered;
   }
 .form {
   @include grid-column(12);
