@@ -10,7 +10,15 @@
     <p>Mine de rien... c'est du boulot</p>
     <p>- Dans la page contact ça envoie votre adresse mails dans un tableau google drive. Je les reçoit aussi par mail.</p>
     <p>- Sur cette page votre adresse mail est envoyée dans MailChimp (newsletter).</p>
-  </div>
+  <p>
+$ git add -A
+$ git commit -m "rajout cmd Heroku"
+$ RAILS_ENV=production rake assets:precompile
+$ git add -A
+$ git commit -m "assets compiled for Heroku"
+$ git push
+$ git push heroku master</p>
+    </div>
   <div class="column4">
     <div class="form-centered">
       <%= simple_form_for @visitor do |f| %>
