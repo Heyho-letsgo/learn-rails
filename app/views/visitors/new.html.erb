@@ -1,25 +1,27 @@
 <% content_for :title do %>André Baudin-Laurencin<% end %>
 <% content_for :description do %>Website d'André Baudin-Laurencin<% end %>
 <section>
-  <img src="http://lorempixel.com/1170/600/cats/2">
+      <div class="column8">
+   <img src="http://lorempixel.com/1170/600/cats/2">
+ <%= link_to 'Il faut rendre à César... ','https://tutorials.railsapps.org/tutorials/learn-rails#introduction'%>
+</div>
+     <div class="column4">  <p>
+<code>
+$ git add -A <br>
+$ git commit -m "rajout cmd Heroku"<br>
+$ RAILS_ENV=production rake assets:precompile<br>
+$ git add -A<br>
+$ git commit -m  "assets compiled for Heroku"<br>
+$ git push<br>
+$ git push heroku master</code>
+</div>
 </section>
 <section>
-  <div class="column8">
-    <h2>Stay in touch... </h2>
+  <div class="column">
+    <h1>Stay in touch... </h1>
     <h3>If you dare...</h3>
-    <p>Mine de rien... c'est du boulot</p>
-    <p>- Dans la page contact ça envoie votre adresse mails dans un tableau google drive. Je les reçoit aussi par mail.</p>
-    <p>- Sur cette page votre adresse mail est envoyée dans MailChimp (newsletter).</p>
-  <p>
-$ git add -A
-$ git commit -m "rajout cmd Heroku"
-$ RAILS_ENV=production rake assets:precompile
-$ git add -A
-$ git commit -m "assets compiled for Heroku"
-$ git push
-$ git push heroku master</p>
-    </div>
-  <div class="column4">
+        </div>
+  <div class="column">
     <div class="form-centered">
       <%= simple_form_for @visitor do |f| %>
         <%= f.error_notification %>
@@ -30,3 +32,13 @@ $ git push heroku master</p>
     </div>
   </div>
 </section>
+
+<section>
+  <div class="column12">
+    <p>Mine de rien... c'est du boulot</p>
+    <p>- Dans la page contact ça envoie votre adresse mails dans un tableau google drive. Je les reçoit aussi par mail.</p>
+    <p>- Sur cette page votre adresse mail est envoyée dans MailChimp (newsletter).</p>
+
+    </div>
+</section>
+
