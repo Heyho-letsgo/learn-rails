@@ -1,44 +1,16 @@
 <% content_for :title do %>André Baudin-Laurencin<% end %>
 <% content_for :description do %>Website d'André Baudin-Laurencin<% end %>
 <section>
-      <div class="column8">
    <img src="http://lorempixel.com/1170/600/cats/2">
- <%= link_to 'Il faut rendre à César... ','https://tutorials.railsapps.org/tutorials/learn-rails#introduction'%>
-</div>
-     <div class="column4">  <p>
-<code>
-$ git add -A <br>
-$ git commit -m "rajout cmd Heroku"<br>
-$ RAILS_ENV=production rake assets:precompile<br>
-$ git add -A<br>
-$ git commit -m  "assets compiled for Heroku"<br>
-$ git push<br>
-$ git push heroku master</code>
-</div>
-</section>
-<section>
-  <div class="column">
-    <h1>Stay in touch... </h1>
-    <h3>If you dare...</h3>
-        </div>
-  <div class="column">
-    <div class="form-centered">
+       <div class="column12">
+    <h1>Pour rester en contact... </h1>
+
+
       <%= simple_form_for @visitor do |f| %>
         <%= f.error_notification %>
-        <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
-        <br/>
-        <%= f.button :submit, "Sign up for the newsletter", :class => "submit" %>
+        <%= f.input :email, label: false, :placeholder => 'Votre adresse mail...' %>
+        <%= f.button :submit, "Pour recevoir la news letter", :class => "submit" %>
       <% end %>
-    </div>
-  </div>
+       </div>
+
 </section>
-
-<section>
-  <div class="column12">
-    <p>Mine de rien... c'est du boulot</p>
-    <p>- Dans la page contact ça envoie votre adresse mails dans un tableau google drive. Je les reçoit aussi par mail.</p>
-    <p>- Sur cette page votre adresse mail est envoyée dans MailChimp (newsletter).</p>
-
-    </div>
-</section>
-
