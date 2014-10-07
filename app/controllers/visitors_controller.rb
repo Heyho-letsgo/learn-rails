@@ -9,7 +9,7 @@ class VisitorsController < ApplicationController
   def create
     @visitor = Visitor.new(secure_params)
     if @visitor.valid?
-      @visitor.subscribe
+      @visitor.subscribe_to_mailchimp
       flash[:notice] = "Signed up #{@visitor.email}."
       redirect_to root_path
     else
