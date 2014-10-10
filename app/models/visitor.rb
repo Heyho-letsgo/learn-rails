@@ -7,7 +7,7 @@ class Visitor < ActiveRecord::Base
 
   def subscribe_to_mailchimp testing=false
     return true if (Rails.env.test? && !testing)
-    list_id = 'f814ca2f86'
+    list_id = ENV['MAILCHIMP_LIST_ID']
 
     response = Rails.configuration.mailchimp.lists.subscribe({
                                                                  id: list_id,
